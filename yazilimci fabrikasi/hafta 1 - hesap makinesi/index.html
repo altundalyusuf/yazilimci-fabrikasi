@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 3px solid gray;
+        }
+
+        caption {
+            border: 4px solid black;
+            margin-bottom: 1rem;
+        }
+
+        .border {
+            border: 3px solid black;
+            background-color: gray;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+        }
+
+
+        #result {
+            background-color: transparent;
+            border: 4px solid black;
+            margin-left: 4px;
+            width: 95%;
+            height: 80%;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        input[type="button"] {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table style="height: 30rem;
+    width: 30rem; margin-left: 5%; margin-top: 3%;">
+        <caption>
+            <h1>Hesap Makinesi</h1>
+        </caption>
+
+        <tbody id="tbody">
+            <tr style="height: 6rem;">
+                <td colspan="3" style="width: 12rem;">
+                    <input type="text" id="result" readonly>
+                </td>
+                <td>
+                    <input type="button" value="C" onclick="clear()" class="border" id="clearButton">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" class="border"></td>
+                <td><input type="button" value="2" class="border"></td>
+                <td><input type="button" value="3" class="border"></td>
+                <td class="small-cell"><input type="button" value="/" class="border"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" class="border"></td>
+                <td><input type="button" value="5" class="border"></td>
+                <td><input type="button" value="6" class="border"></td>
+                <td><input type="button" value="-" class="border"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" class="border"></td>
+                <td><input type="button" value="8" class="border"></td>
+                <td><input type="button" value="9" class="border"></td>
+                <td><input type="button" value="+" class="border"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="." class="border"></td>
+                <td><input type="button" value="0" class="border"></td>
+                <td><input type="button" value="=" class="border" id="equals"></td>
+                <td><input type="button" value="*" class="border"></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
