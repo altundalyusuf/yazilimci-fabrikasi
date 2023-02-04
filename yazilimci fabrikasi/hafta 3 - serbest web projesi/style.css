@@ -1,0 +1,35 @@
+body { 
+  padding-top: 100px; 
+  background-image: url('https://i.pinimg.com/originals/4a/a9/9b/4aa99b6ad2d2cbc7cb04a41571885a8f.jpg');
+}
+
+.logo{
+  height: 3.3em;
+}
+
+.bg-color-2{
+  background-color: #252525;
+}
+
+.bg-color{
+  background-color: #fff147;
+  padding: 0.2em 0;
+}
+.bg-color1{
+  background-color: #8f4c3d;
+  padding: 0.2em 0;
+  color:snow;
+}
+.list-group-item.list-group-item-action.active{
+  background-color: #fff147;
+  color: #252525;
+}
+
+.aside-image{
+  height:18em;
+}
+
+.list-group-item.list-group-item-action:active{
+  background-color:#fff147;
+}
+  

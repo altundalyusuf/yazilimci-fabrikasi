@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies.com</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-color-2 ">
+        <a class="navbar-brand" href="home.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTiG-KHnS1sbGi8y0IW2aLyjatZri2Tt4u8Q_3gcx66die0imRUJ7-rVaTPUS76YIcOg&usqp=CAU"
+                alt="movies.com" class="logo">
+            Movies.com
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="https://www.imdb.com/chart/top/" target="_blank">IMDB Top 250 Movies</a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Slayt gösterisi -->
+        <div id="carouselExampleInterval" class="carousel slide w-75 mx-auto " data-ride="carousel">
+            <h1 class="display-5 text-center bg-color">Today's suggested movies for you</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="https://i.ytimg.com/vi/vOpiSFjtawo/maxresdefault.jpg" class="d-block w-100"
+                        alt="lotr image">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="https://images.thedirect.com/media/article_full/the-batman-reviews.jpg"
+                        class="d-block w-100" alt="the batman">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="https://i.ytimg.com/vi/TgGXpl0SOkw/maxresdefault.jpg" class="d-block w-100"
+                        alt="spiderman no way home">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+
+        <!-- Film Listesi -->
+        <section class="bg-dark w-75 mx-auto my-3">
+            <h3 class="bg-color1">See the details of the movies below!</h3>
+            <div class="list-group">
+                <a href="#starwars" class="list-group-item list-group-item-action" aria-current="true" name="starwars">
+                    <strong>Star Wars</strong>
+                </a>
+                <a href="#batman" class="list-group-item list-group-item-action" name="batman"><strong>The
+                        Batman</strong></a>
+                <a href="#spiderman" class="list-group-item list-group-item-action" name="spiderman"><strong>Spiderman:
+                        No Way
+                        Home</strong> </a>
+            </div>
+        </section>
+
+        <!-- Film Detayları -->
+        <article id="starwars" class="  mx-auto my-2">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdf175e7-bd09-4853-8977-d0f72b10f1cd/d282vff-96fafe37-16fc-4492-a16e-ef407340fb9e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NkZjE3NWU3LWJkMDktNDg1My04OTc3LWQwZjcyYjEwZjFjZFwvZDI4MnZmZi05NmZhZmUzNy0xNmZjLTQ0OTItYTE2ZS1lZjQwNzM0MGZiOWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8ICOhFjMyet5AvEBJKwnz7T06Ez4X6cs56Q7OskA0jc"
+                        alt="anakin skywalker" class="aside-image float-left">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card text-white bg-info mb-3 text-center">
+                        <div class="card-header display-4">Star Wars</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Star Wars Quotes</h5>
+                            <p class="card-text">This is the weapon of a Jedi Knight. Not as clumsy or random as a
+                                blaster; an elegant weapon for a more civilized age.</p>
+                            <p class="card-text">Do. Or do not. There is no try.</p>
+                            <p class="card-text">If you only knew the power of the Dark Side. Obi-Wan never told you
+                                what happened to your father. I am your father.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <img src="https://m.media-amazon.com/images/I/810tvepa9XL._AC_UF894,1000_QL80_.jpg"
+                        alt="obi wan kenobi" class="aside-image float-right">
+                </div>
+            </div>
+        </article>
+
+        <article id="batman" class="  mx-auto my-2">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg"
+                        alt="the batman poster" class="aside-image float-left">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card text-white bg-danger mb-3 text-center">
+                        <div class="card-header display-4">The Batman</div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Batman Reviews</h5>
+                            <p class="card-text">Detective Batman at its peak! Great storyline. Just as dark a universe
+                                as we've come to expect from DC. The gloomy, gritty, dark tone of this film is exactly
+                                what I wanted. When you think the movie is over, there's more. Beautiful cinematography.
+                                Great score.</p>
+                            <p class="card-text">This movie really won't be for everyone!! Easily the darkest Batman
+                                movie yet. It is gritty, depressing and not a fun movie at all.
+
+                                This isn't your usual comic book movie, it's a detective movie, with more in common with
+                                Se7en, than previous Batman movies. The first two thirds of the movie are amazing, at
+                                one point I turned to my son and said "This is a masterpiece" everything works and is
+                                brilliant, I was 100% enthralled, but boy does it drop the ball in the final act.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <img src="https://www.donanimhaber.com/images/images/galeri/7268/2022-nin-beklenen-filmi-the-batman-den-yeni-gorseller-paylasildi-7268-3.jpg"
+                        alt="the batman poster 2" class="aside-image float-right">
+                </div>
+            </div>
+        </article>
+
+        <article id="spiderman" class="  mx-auto my-2">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="https://gecbunlari.com/wp-content/uploads/2021/12/Spiderman-No-Way-Home.jpg"
+                        alt="no way home poster" class="aside-image float-left">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card text-white bg-primary mb-3 text-center">
+                        <div class="card-header display-4">No Way Home</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Spiderman: No Way Home</h5>
+                            <p class="card-text">With Spider-Man's identity now revealed, Peter asks Doctor Strange for
+                                help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing
+                                Peter to discover what it truly means to be Spider-Man.
+                                Peter Parker's secret identity is revealed to the entire world. Desperate for help,
+                                Peter turns to Doctor Strange to make the world forget that he is Spider-Man. The spell
+                                goes horribly wrong and shatters the multiverse, bringing in monstrous villains that
+                                could destroy the world.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <img src="https://tr.web.img4.acsta.net/pictures/22/08/22/16/29/5693673.jpg"
+                        alt="no way home poster 2" class="aside-image float-right">
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-color-2 text-muted">
+
+
+        <!-- Section: Links  -->
+        <section class="pt-1">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-1">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Movies.com
+                        </h6>
+                        <p>
+                            You can find your daily movies and enjoy them here :) <br> <br>
+                            We do what we do with love &#9829;
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">HTML</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">CSS</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">JavaScript</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="https://www.imdb.com/chart/top/" class="text-reset">Movies</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-reset">Contact</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> Turkey, IST 10012, TR</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            movies@info.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="home.html">Movies.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
